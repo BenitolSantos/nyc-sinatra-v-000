@@ -1,6 +1,6 @@
 <h2>Create New Figure</h2>
 <!-- add content here -->
-<form class="" action="/figures" method="post">
+<form class="" action="/figures/<%=@figures.id%>" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
   <h2>New Figure Name</h2>
   <input type="text" name="figure[name]" value="<%=@figure.name%>" id="figure_name">
