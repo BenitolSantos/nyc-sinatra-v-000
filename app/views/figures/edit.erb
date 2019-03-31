@@ -3,7 +3,7 @@
 <form class="" action="/figures" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
   <h2>New Figure Name</h2>
-  <input type="text" name="figure[name]" value="figure" id="figure_name">
+  <input type="text" name="figure[name]" value="<%=@figure.name>" id="figure_name">
   <br>
   <h2>Titles</h2>
   <% Title.all.each do |title| %>
