@@ -62,6 +62,7 @@ class FiguresController < ApplicationController
     @figure = Figure.find_by_id(params[:id])
     @figure.update(params[:figure])
     if params[:landmark]
+      @landmark = Landmark.create(params[:landmark])
     end
     redirect to("/figures/#{@figure.id}")
   end
