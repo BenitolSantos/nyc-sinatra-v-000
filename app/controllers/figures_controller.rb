@@ -58,6 +58,7 @@ class FiguresController < ApplicationController
   end
 
   patch "/figures/:id" do
+    params
     redirect to("/figures/#{@figure.id}")
   end
 end
